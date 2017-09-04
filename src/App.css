@@ -172,3 +172,32 @@ body, .app {
   text-align: center;
   font-size: 0.8em;
 }
+
+.star {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: white;
+  background-image: url('./icons/star.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 15px;
+  font-size: 0;
+}
+
+.half-star {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: white;
+  background-image: url('./icons/half-star.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 15px;
+  font-size: 0;
+}
+
+.rating-count {
+  font-size: .7em;
+  padding-left: 2px;
+}
