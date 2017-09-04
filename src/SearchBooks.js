@@ -11,6 +11,11 @@ class SearchBooks extends Component {
 
   handleSearch = (searchTerm) => {
     BooksAPI.search(searchTerm, 25).then((books) => {
+      if (!books || books.error) {
+        this.setState({ searchBooks: [] });
+        return;
+      };
+
       books.forEach(b => b.shelf = this.getBookShelf(b))
       this.setState({
         searchBooks: books
@@ -55,7 +60,7 @@ class SearchBooks extends Component {
 
 SearchBooks.propTypes = {
   books: PropTypes.array.isRequired,
-  onChangeShelf: PropTypes.func.isRequired 
+  onChangeShelf: PropTypes.func.isRequired
 }
 
 export default SearchBooks
