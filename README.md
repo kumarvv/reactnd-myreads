@@ -1,9 +1,8 @@
 # MyReads Project
-
 MyReads is a web application to manage your Books reading activities.
 
 # Requirements
-- Node and NPM are required and can be downloaded here
+- Node and NPM are required and can be downloaded [here](https://nodejs.org/en/download/)
 
 # Installation
 1. clone the repo: `git clone https://github.com/kumarvv/reactnd-myreads.git`
